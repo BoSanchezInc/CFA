@@ -7,31 +7,79 @@
 <title>jQuery Mobile Web App</title>
 <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
 <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
 </head>
 <body>
 <div data-role="page" id="page">
-  <div data-role="header" data-theme="b">
-    <h1>Page One</h1>
+  <div data-role="header" data-theme="b" >
+    <img src="img/logo.png" height="100"  alt=""/>
   </div>
+  
   <div data-role="content">
-    <ul data-role="listview">
-      <li><a href="#page2">Page Two</a></li>
-      <li><a href="#page3">Page Three</a></li>
-      <li><a href="#page4">Page Four</a></li>
-    </ul>
+  <p align="center"><img src="img/video.jpg" width="400" height="245"  onClick="window.open('http://www.youtube.com/embed/ByacE3cRg_s?html5=1', '_blank', 'location=yes');" /></p>
+<h2 align="center">10 Core Principles That Will
+  Dramatically Change Your Child’s Life—
+  And Your Life As Well.</h2>
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Follow Your Child’s Passions</h3>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Follow Your Child’s Learning Style</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Follow your Child’s Learning Pace Per Subject</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Never Use Fear & Punishments As Motivation</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Use Tests And Grades As Tools For Gauging Mastery, not as Tools to Label and Terrorize your Child</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Nurture A Great Love For Reading</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Make Ordinary Life Events As Your Classroom</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Make Work And Service Essential To Your Child’s Education</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Build Your Family Relationship (The Greatest Reward!)</h3>
+        <p>Content</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Personally Share Your Faith and Values With Your Child</h3>
+        <p>Content</p>
+      </div>
+    </div>
+  
+  
   </div>
-            <div data-role="footer" data-id="foo1" data-position="fixed">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a data-theme="b" href="#store" data-icon="star">Home</a></li>
-                        <li><a data-theme="b" href="#library" data-icon="grid" class="ui-btn-active ui-state-persist">Blog</a></li>
-                        <li><a data-theme="b" href="#settings" data-icon="gear">Program</a></li>
-                        <li><a data-theme="b" href="#more" data-icon="plus">More</a></li>
-                    </ul>
-                </div><!-- /navbar -->
-            </div><!-- /footer -->
+<div data-role="footer" data-id="foo1" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a data-theme="b" href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+            <li><a data-theme="b" href="#blog" data-icon="person">Blog</a></li>
+            <li><a data-theme="b" href="#program" data-icon="flag">Program</a></li>
+            <li><a data-theme="b" href="#contact" data-icon="comment">Contact</a></li>
+        </ul>
+  </div><!-- /navbar -->
+</div><!-- /footer -->
 </div>
 <div data-role="page" id="page2">
   <div data-role="header">
@@ -60,5 +108,10 @@
     <h4>Page Footer</h4>
   </div>
 </div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
 </body>
 </html>
